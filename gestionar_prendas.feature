@@ -29,3 +29,5 @@ Given que el usuario encuentra en su “Armario”
 When el usuario selecciona la opción “Filtrar prendas”
 And la inteligencia artificial filtra las prendas
 Then las prendas con el filtro son mostradas en pantalla
+
+Falta agregar 4 escenario pertenecientes a las US mencionadas
