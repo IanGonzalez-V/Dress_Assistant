@@ -40,9 +40,11 @@ and se recibe en una cuenta un monto como comisión por la compra realizada por 
 Scenario: Configurar recomendaciones para compra de ropa.
 Given el usuario se encuentra en la configuración de recomendaciones
 and el usuario selecciona la opción “Otras prendas”
-and el usuario realiza sus configuraciones en la interfaz, que tiene con una recta de 0 a 100 con botón deslizante con título “% prendas nuevas / prendas recomendadas” y opciones de “Filtrar tiendas”, “Filtrar ubicación”, “Filtrar colección”.
+and el usuario realiza sus configuraciones en la interfaz, que tiene con una recta de 0 a 100 con botón deslizante con título
+“% prendas nuevas / prendas recomendadas” y opciones de “Filtrar tiendas”, “Filtrar ubicación”, “Filtrar colección”.
 When el usuario confirma su elección seleccionando el botón de “Confirmar”
-Then el sistema registra de nuevo todos estos parámetros de filtro, que se aplicarán por la IA empezando desde la siguiente recomendación hasta que el usuario vuelva a modificar la configuración.
+Then el sistema registra de nuevo todos estos parámetros de filtro, que se aplicarán por la IA empezando desde la siguiente 
+recomendación hasta que el usuario vuelva a modificar la configuración.
 and el usuario es regresado al menú de configuración de recomendaciones.
 
 Scenario: Configurar recomendaciones para compra de ropa.
@@ -54,8 +56,10 @@ Scenario: Configurar recomendaciones por estación.
 Given el usuario se encuentra en la configuración de recomendaciones
 and el usuario selecciona la opción “Estación”
 and el usuario elige una estación (verano, primavera, invierno u otoño).
-When el usuario confirma su elección seleccionando confirmar en la ventana emergente:  “Se configurará la búsqueda para la estación [estación elegida] \n Confirmar | Cancelar”
-Then el sistema registra este nuevo parámetro de filtro, el cual será aplicado por la IA empezando desde la siguiente recomendación hasta que el usuario vuelva a modificar el parámetro manualmente.
+When el usuario confirma su elección seleccionando confirmar en la ventana emergente:  
+“Se configurará la búsqueda para la estación [estación elegida] \n Confirmar | Cancelar”
+Then el sistema registra este nuevo parámetro de filtro, el cual será aplicado por la IA empezando 
+desde la siguiente recomendación hasta que el usuario vuelva a modificar el parámetro manualmente.
 and el usuario es regresado al menú de configuración de recomendaciones.
 
 
@@ -64,4 +68,5 @@ Given el usuario se encuentra en la configuración de recomendaciones
 and el usuario selecciona la opción “Evento”
 and el usuario elige una opción, entre “Reunión”, “Conferencia”, “Presentación”, “Venta”, “Junta”, “Evento público”.
 When el usuario confirma su elección
-Then el sistema registra este nuevo parámetro de filtro, el cual será aplicado por la IA empezando desde la siguiente recomendación hasta que el usuario vuelva a modificar el parámetro manualmente.
+Then el sistema registra este nuevo parámetro de filtro, el cual será aplicado por la IA empezando desde la siguiente 
+recomendación hasta que el usuario vuelva a modificar el parámetro manualmente.
