@@ -1,6 +1,7 @@
 Feature: Configurar recomendaciones 
-Incluye las US: US10, US12, US13, US14
+Incluye las US: US10, UA11, US12, US13, US14
 Comprende la configuración del tipo de recomendación en la interfaz de recomendaciones 
+
 Scenario: Visualizar recomendaciones al iniciar la aplicación
 Given el usuario ha iniciado sesión con una cuenta
 When el usuario abre la aplicación
@@ -28,6 +29,13 @@ and el usuario ha seleccionado un atuendo
 When el usuario selecciona una prenda registrada en la base de datos
 and el usuario selecciona la opción “Comprar”
 Then se le redirecciona a la página web donde puede comprar la prenda, mediante el uso de un enlace de afiliado.
+
+Scenario: Restaurar la configuración original (estándar).
+Given el usuario se encuentra en la interfaz de recomendaciones
+and el usuario ha completado el registro de su perfil
+and el usuario selecciona el ícono de limpiar
+When el usuario confirma que quiere restaurar la configuración original
+Then se borran en el sistema las modificaciones realizadas por el usuario y se restaura la configuración original.
 
 Scenario: Comprar una prenda recomendada por la aplicación
 Given el usuario seleccionó una prenda recomendada
