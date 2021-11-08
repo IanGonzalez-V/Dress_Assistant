@@ -17,7 +17,6 @@
    And se presenta una nueva interfaz con una primera fila de 3 atuendos con ropa exclusivamente del armario
    And una segunda fila, con 3 atuendos elaborados tanto con prendas del armario como con prendas de la base de datos que el usuario no posee.
 
-
    Scenario: Refrescar recomendaciones
    Given el usuario se encuentra en la interfaz de recomendaciones
    When el usuario selecciona el botón de refrescar
@@ -26,7 +25,7 @@
 
    Scenario: Redireccionar a tienda de una prenda recomendada
    Given el usuario se encuentra en la interfaz de recomendaciones
-   and el usuario ha seleccionado un atuendo 
+   And el usuario ha seleccionado un atuendo 
    When el usuario selecciona una prenda registrada en la base de datos
    And el usuario selecciona la opción “Comprar”
    Then se le redirecciona a la página web donde puede comprar la prenda, mediante el uso de un enlace de afiliado.
