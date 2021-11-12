@@ -1,4 +1,4 @@
-Feature: Configurar recomendación para compra de ropa nueva
+Feature: US12 - Configurar recomendación para compra de ropa nueva
 
     FComo usuario premium, quiero poder seleccionar el porcentaje de la ropa recomendada que no poseo, para recibir recomendaciones de atuendos o piezas para comprar y tener nuevos atuendos.
 
