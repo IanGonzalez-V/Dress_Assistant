@@ -51,7 +51,7 @@ Examples:
     | Botón Refrescar  |             Petición           |
     | tactile_click()  | no_repetir_prendas(prendas[])  |
 
-    |             generar_atuendo_propio()                |
+    |             generar_atuendo_híbrido()               |
     |      Polera    |      Vestido     |     Zapatos     |
     | polera6345.png |    fiesta_3.png  | zapa_fiesta.png |
 
