@@ -10,6 +10,10 @@ And se muestra una fila de atuendos recomendados con las prendas del armario
 And una fila de atuendos recomendados incluyendo prendas que el usuario no posee.
 
 Examples:
+    |                                  generar_atuendo_propio()                                |
+    |      Casaca      |       Camisa      |      Pantalón     |     Correa    |     Zapatillas    |
+    | casaca_negra.png |  camisa_rayas.png |   pantalon_3.png  | correa2.png   |       nike.png    |
+
     |      Recomendación (1;1)    |       Recomendación (1;2)    |      Recomendación (1;3)    |
     |  generar_atuendo_propio()   |  generar_atuendo_propio()    |  generar_atuendo_propio()   |
 
@@ -27,6 +31,10 @@ Examples:
     | Botón Recomendaciones | Perfil de usuario |  Configuración de recomendaciones  |
     |    tactile_click()    |  Casual premium   | obtener_configuracion_base_datos() |
 
+    |                                  generar_atuendo_híbrido()                            |
+    |      Polera    |      Polo       |      Jogger     |     Gorra     |     Zapatillas    |
+    | polera2312.png |  polo_negro.png |  jogger4534.png | gorra0254.png |      nike.png     |
+
     |      Recomendación (1;1)    |       Recomendación (1;2)    |      Recomendación (1;3)    |
     |  generar_atuendo_propio()   |  generar_atuendo_propio()    |  generar_atuendo_propio()   |
 
@@ -43,6 +51,10 @@ Examples:
     | Botón Refrescar  |             Petición           |
     | tactile_click()  | no_repetir_prendas(prendas[])  |
 
+    |             generar_atuendo_propio()                |
+    |      Polera    |      Vestido     |     Zapatos     |
+    | polera6345.png |    fiesta_3.png  | zapa_fiesta.png |
+
     |      Recomendación (1;1)    |       Recomendación (1;2)    |      Recomendación (1;3)    |
     |  generar_atuendo_propio()   |  generar_atuendo_propio()    |  generar_atuendo_propio()   |
 
@@ -57,8 +69,8 @@ And el usuario selecciona la opción “Comprar”
 Then se le redirecciona a la página web donde puede comprar la prenda, mediante el uso de un enlace de afiliado.
 
 Examples:
-    | Recomendación (2;2) | Long-Sleeve Pullover Hoodie |  Botón Comprar   |                   Página web               |
-    |   tactile_click()   |        tactile_click()      | tactile_click()  | https://www.amazon.com/Under-Armour-Hoodie/|
+    | Recomendación (2;2) | polera6345.png  |  Botón Comprar   |                   Página web               |
+    |   tactile_click()   | tactile_click() | tactile_click()  | https://www.amazon.com/Under-Armour-Hoodie/|
 
 Scenario: Comprar una prenda recomendada por la aplicación
 Given que el usuario seleccionó una prenda recomendada
