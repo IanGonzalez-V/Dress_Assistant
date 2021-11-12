@@ -1,6 +1,7 @@
 Feature: US13 - Configurar recomendación por estación
 
-    Como usuario, quiero configurar mi recomendacion de atuendos por estación, para vestirme en base a la temporada de estación de mi ubicación o de mi elección. 
+    Como usuario premium, quiero poder configurar las recomendaciones según la estación, para descartar fácilmente las prendas que no son pertinentes para la época del año.
+
 
     Scenario: Configurar recomendaciones por estación.
     Given que el usuario se encuentra en la configuración de recomendaciones
