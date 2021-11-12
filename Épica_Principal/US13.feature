@@ -7,7 +7,8 @@ Feature: US13 - Configurar recomendación por estación
     And el usuario selecciona la opción “Estación”
     And el usuario elige una estación (verano, primavera, invierno u otoño).
     When el usuario confirma su elección seleccionando confirmar en la ventana emergente:  “Se configurará la búsqueda para la estación [estación elegida] \n Confirmar | Cancelar”
-    Then el sistema registra este nuevo parámetro de filtro, el cual será aplicado por la IA empezando desde la siguiente recomendación hasta que el usuario vuelva a modificar el parámetro manualmente.
+    Then el sistema registra este nuevo parámetro de filtro, el cual será aplicado por la IA empezando desde la siguiente recomendación hasta que el usuario vuelva a modificar el
+    parámetro manualmente.
     And el usuario es regresado al menú de configuración de recomendaciones.
 
     Examples:
