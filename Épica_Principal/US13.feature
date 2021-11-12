@@ -2,7 +2,6 @@ Feature: US13 - Configurar recomendación por estación
 
     Como usuario premium, quiero poder configurar las recomendaciones según la estación, para descartar fácilmente las prendas que no son pertinentes para la época del año.
 
-
     Scenario: Configurar recomendaciones por estación.
     Given que el usuario se encuentra en la configuración de recomendaciones
     And el usuario selecciona la opción “Estación”
