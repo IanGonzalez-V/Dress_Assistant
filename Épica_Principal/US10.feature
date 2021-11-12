@@ -11,8 +11,8 @@ And una fila de atuendos recomendados incluyendo prendas que el usuario no posee
 
 Examples:
     |                                  generar_atuendo_propio()                                |
-    |      Casaca      |       Camisa      |      Pantalón     |     Correa    |     Zapatillas    |
-    | casaca_negra.png |  camisa_rayas.png |   pantalon_3.png  | correa2.png   |       nike.png    |
+    |      Casaca      |       Camisa      |      Pantalón     |     Correa    |  Zapatillas   |
+    | casaca_negra.png |  camisa_rayas.png |   pantalon_3.png  | correa2.png   |  nike.png     |
 
     |      Recomendación (1;1)    |       Recomendación (1;2)    |      Recomendación (1;3)    |
     |  generar_atuendo_propio()   |  generar_atuendo_propio()    |  generar_atuendo_propio()   |
@@ -31,7 +31,7 @@ Examples:
     | Botón Recomendaciones | Perfil de usuario |  Configuración de recomendaciones  |
     |    tactile_click()    |  Casual premium   | obtener_configuracion_base_datos() |
 
-    |                                  generar_atuendo_híbrido()                            |
+    |                                   generar_atuendo_híbrido()                            |
     |      Polera    |      Polo       |      Jogger     |     Gorra     |     Zapatillas    |
     | polera2312.png |  polo_negro.png |  jogger4534.png | gorra0254.png |      nike.png     |
 
