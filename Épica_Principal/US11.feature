@@ -1,6 +1,7 @@
 Feature: US11 - Restaurar configuración predeterminada
 
-    Como usuario premium, quiero poder borrar mis cambios a la configuración de recomendaciones para recibir las recomendaciones estándar o para facilitar la realización de una nueva configuración.
+    Como usuario premium, quiero poder borrar mis cambios a la configuración de recomendaciones para recibir las recomendaciones estándar o 
+    para facilitar la realización de una nueva configuración.
 
     Scenario: Restaurar la configuración original (estándar).
     Given que el usuario se encuentra en la interfaz de recomendaciones
